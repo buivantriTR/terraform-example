@@ -1,14 +1,5 @@
 
-terraform {
-  backend "remote" {
-    hostname = "bvtitr.scalr.io"
-    organization = "env-tc8jninou6pvht0"
 
-    workspaces {
-      name = "TrAWSDemo04"
-    }
-  }
-}
 
 # Create new EC2 in AWS using module
 # resource "aws_instance" "tr_vm" {
