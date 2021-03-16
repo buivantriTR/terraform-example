@@ -1,5 +1,14 @@
 
+terraform {
+  backend "remote" {
+    hostname = "bvtitr.scalr.io"
+    organization = "env-tc8jninou6pvht0"
 
+    workspaces {
+      name = "TrCase01"
+    }
+  }
+}
 
 # Create new EC2 in AWS using module
 # resource "aws_instance" "tr_vm" {
@@ -21,7 +30,7 @@
 
 module "tr_vm" {
   source              = "github.com/buivantriTR/terraform-aws-ec2-module?ref=v0.1.1"
-  number_of_instances = 2
+  number_of_instances = 1
   ami_instance        = "ami-0f86a70488991335e"
   instance_type       = "t2.micro"
   key_name            = "trvm"
