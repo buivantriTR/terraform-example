@@ -5,7 +5,7 @@ terraform {
     organization = "env-tc8jninou6pvht0"
 
     workspaces {
-      name = "TrAWSDemo03"
+      name = "TrAWSDemo04"
     }
   }
 }
