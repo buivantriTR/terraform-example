@@ -18,7 +18,3 @@ variable "ami_instance" {
 variable "key_name" {
   type = string
 }
-
-variable "region" {
-  type = string
-}

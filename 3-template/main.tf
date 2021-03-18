@@ -24,7 +24,10 @@ module "ec2-module" {
   ami_instance        = var.ami_instance
   instance_type       = var.instance_type
   key_name            = var.key_name
-  region              = var.region
+
+  tags = {
+    Name = "Prod"
+  }
 }
 
 # Create new VPC
