@@ -1,4 +1,9 @@
 
+# Configuration AWS
+provider "aws" {
+  region     = "ap-southeast-1"
+}
+
 module "ec2-module" {
   source  = "bvtitr.scalr.io/env-tc8jninou6pvht0/ec2-module/aws"
   version = "0.1.2"
