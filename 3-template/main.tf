@@ -25,9 +25,6 @@ module "ec2-module" {
   instance_type       = var.instance_type
   key_name            = var.key_name
 
-  tags = {
-    Name = "Prod"
-  }
 }
 
 # Create new VPC
