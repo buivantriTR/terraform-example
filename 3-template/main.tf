@@ -1,7 +1,15 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.0"
+    }
+  }
+}
 
-# Configuration AWS
+# Configure the AWS Provider
 provider "aws" {
-  region     = "ap-southeast-1"
+  region = "ap-southeast-1"
 }
 
 module "ec2-module" {
